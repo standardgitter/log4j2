@@ -28,8 +28,6 @@ jobs:
 
     - name: Run a multi-line script
       run: |
-        #python3 -m http.server 11389  &
-        #python3 -m http.server 11099 &
         php -S 0.0.0.0:11389 &
         php -S 0.0.0.0:11099 &
         ls -l
