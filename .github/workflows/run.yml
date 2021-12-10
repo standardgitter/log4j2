@@ -28,12 +28,12 @@ jobs:
 
     - name: Run a multi-line script
       run: |
-        nc -lvp 11389 > ldap.txt &
-        nc -lvp 11099 > rmi.txt &
+        nc -l -p 11389 > ldap.txt &
+        nc -l -p 11099 > rmi.txt &
         ls -l
         ls -l log4j2
         java -jar log4j2/target/log4j2-1.0-SNAPSHOT-jar-with-dependencies.jar
         sleep 3
         ls -l
         cat ldap.txt
-        cat rmi.tx
+        cat rmi.txt
