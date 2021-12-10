@@ -34,7 +34,6 @@
          
     <build>
         <plugins>
-            <!-- 使用maven-assembly-plugin插件打包 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
